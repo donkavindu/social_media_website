@@ -1,0 +1,45 @@
+.leftpane{
+    flex: 2;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    position: sticky;
+    top: 50px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.leftpane:hover::-webkit-scrollbar{
+    display: block;
+    width: .5rem;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(237, 237, 237);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(190, 190, 190);
+    border-radius: 1rem;
+}
+.leftpane .leftpane-container{
+    padding: 1rem;
+}
+.leftpane .leftpane-container .leftpane-menu{
+    list-style: none;
+}
+.leftpane .leftpane-container .leftpane-menu .left-menuitem{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+.leftpane .leftpane-container .liked-pages .page-list{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.leftpane .leftpane-container .liked-pages .page-list img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}

@@ -1,0 +1,79 @@
+.rightpane{
+    flex: 3;
+    padding: 1rem;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    position: sticky;
+    top: 50px;
+}
+::-webkit-scrollbar{
+    display: none;
+    
+}
+.rightpane:hover::-webkit-scrollbar{
+    display: block; 
+    width: .5rem;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(237, 237, 237);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(190, 190, 190);
+    border-radius: 1rem;
+}
+.rightpane .right-pane-box .right-pane-container .add-container{
+    margin-bottom: 1rem;
+}
+.rightpane .right-pane-box .right-pane-container .add-container .ad-text{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.rightpane .right-pane-box .right-pane-container .add-container img{
+    width: 80%;
+    border-radius: 2rem;
+    display: block;
+    margin-bottom: .5rem;
+}
+.rightpane .right-pane-box .right-pane-container .bday-container{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    box-shadow: 0rem 0.1rem 1rem rgb(223, 223, 223);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.rightpane .right-pane-box .right-pane-container .bday-container .birthdayicon{
+    font-size: 3rem;
+    color: brown;
+}
+.rightpane .right-pane-box .right-pane-container .active-freinds .active-friend{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .8rem;
+}
+.rightpane .right-pane-box .right-pane-container .active-freinds .active-friend .active-user-profile{
+    position: relative;
+    z-index: -999;
+}
+.rightpane .right-pane-box .right-pane-container .active-freinds .active-friend .active-user-profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.rightpane .right-pane-box .right-pane-container .active-freinds .active-friend .active-user-profile .active-mark{
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    background-color: lime;
+    border-radius: 50%;
+    position: absolute;
+    bottom: .3rem;
+    right: .3rem;
+    border: 2px solid white;
+}
